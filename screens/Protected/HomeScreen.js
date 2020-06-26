@@ -29,7 +29,9 @@ const posts = [
 
 const HomeScreen = (props) => {
   const onPressAvatar = () => {
-    props.navigation.navigate('Profile');
+    props.navigation.navigate('Profile', {
+      employee: null,
+    });
   };
   return (
     <Container>
